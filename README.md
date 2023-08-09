@@ -11,19 +11,19 @@ Com o Mestre Rafael Miranda.
 - Monitoria  
 - RabbitMQ  
 
-Dia 1 - 03/08/2023
+Dia 1 - 03/08/2023  
   Definição do escopo do projeto.  
   Criação das Models: foi criado um esboço das entidades Entity para o Id, produto e atributos, com a relação de um para muitos para o CRUD.   
-  Entity:
-    - Id
-  Product:
-    - Sku
-    - Description
-    - Producer
-  Attribute:
-    - Name
-    - Value
-  *Dicas*:
+  Entity:  
+    - Id  
+  Product:  
+    - Sku  
+    - Description  
+    - Producer  
+  Attribute:  
+    - Name  
+    - Value  
+  *Dicas*:  
 
   Dia 2 - 09/08/2023
     Orientação sobre Dockerfile e docker-compose.yml:  
@@ -50,6 +50,7 @@ Dia 1 - 03/08/2023
     Tendo as classes models criadas, devemos criar uma classe de contexto do banco de dados. Uma classe que estenda a classe DbContext. Para isso foi criado o construtor passando o 
     DbContextOptions e os DbSets que serão as tabelas criadas pelo EF.  
     Como ficou a classe extendida pelo DbContext:  
+    
     ````
     public class DataBaseContext : DbContext
     {
