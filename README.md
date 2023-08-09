@@ -31,6 +31,7 @@ Com o Mestre Rafael Miranda.
     O que realmente necessitamos nesta etapa do projeto é criar o arquivo docker-compose.yml para termos um banco local, não a necessidade de criar uma imagem para aplicação com o DockerFile.  
     Também não é necessário que o compose tenha volumes, pois não há necessidade de persistir os dados na máquina.  
     Como ficou o docker-compose.yml:  
+    ````
     version: '3.8'  
     services:  
     sql-server:  
@@ -39,7 +40,8 @@ Com o Mestre Rafael Miranda.
       SA_PASSWORD: Password1  
       ACCEPT_EULA: Y  
     ports:  
-      - "1433:1433"  
+      - "1433:1433"
+    ````
     Comando para executar o docker compose:  
     ````  
     docker compose up -d
