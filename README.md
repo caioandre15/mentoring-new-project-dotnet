@@ -50,7 +50,6 @@ Dia 1 - 03/08/2023
     Tendo as classes models criadas, devemos criar uma classe de contexto do banco de dados. Uma classe que estenda a classe DbContext. Para isso foi criado o construtor passando o 
     DbContextOptions e os DbSets que serão as tabelas criadas pelo EF.  
     Como ficou a classe extendida pelo DbContext:  
-    
     ````
     public class DataBaseContext : DbContext  
     {
