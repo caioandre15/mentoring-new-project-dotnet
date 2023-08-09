@@ -32,7 +32,7 @@ Com o Mestre Rafael Miranda.
     Também não é necessário que o compose tenha volumes, pois não há necessidade de persistir os dados na máquina.  
     Como ficou o docker-compose.yml:  
     ````  
-    version: '3.8'                                                                                                                                                                                                                             
+    version: '3.8'                        
     services:                                          
     sql-server:                                                
     image: mcr.microsoft.com/mssql/server                                    
