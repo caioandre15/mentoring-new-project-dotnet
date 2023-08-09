@@ -45,13 +45,13 @@ Com o Mestre Rafael Miranda.
     ````  
   Comando para executar o docker compose:  
     ````  
-    docker compose up -d
+  docker compose up -d
     ````  
-    Orientação sobre EF:  
-    O que é preciso para configurá-lo?  
-    Tendo as classes models criadas, devemos criar uma classe de contexto do banco de dados. Uma classe que estenda a classe DbContext. Para isso foi criado o construtor passando o 
-    DbContextOptions e os DbSets que serão as tabelas criadas pelo EF.  
-    Como ficou a classe extendida pelo DbContext:  
+  Orientação sobre EF:  
+  O que é preciso para configurá-lo?  
+  Tendo as classes models criadas, devemos criar uma classe de contexto do banco de dados. Uma classe que estenda a classe DbContext. Para isso foi criado o construtor passando o 
+  DbContextOptions e os DbSets que serão as tabelas criadas pelo EF.  
+  Como ficou a classe extendida pelo DbContext:  
     
     ````
     public class DataBaseContext : DbContext  
