@@ -11,7 +11,7 @@ Com o Mestre Rafael Miranda.
 - Monitoria  
 - RabbitMQ  
 
-*Dia 1 - 03/08/2023*  
+**Dia 1 - 03/08/2023**  
   Definição do escopo do projeto.  
   Criação das Models: foi criado um esboço das entidades Entity para o Id, produto e atributos, com a relação de um para muitos para o CRUD.   
   ````
@@ -26,7 +26,7 @@ Com o Mestre Rafael Miranda.
     - Value
    ````  
 
-  *Dia 2 - 09/08/2023*  
+  **Dia 2 - 09/08/2023**  
     Orientação sobre Dockerfile e docker-compose.yml:  
     O que realmente necessitamos nesta etapa do projeto é criar o arquivo docker-compose.yml para termos um banco local, não a necessidade de criar uma imagem para aplicação com o DockerFile.  
     Também não é necessário que o compose tenha volumes, pois não há necessidade de persistir os dados na máquina.  
@@ -42,10 +42,9 @@ Com o Mestre Rafael Miranda.
     ports:
       - "1433:1433"  
     ````
-    ``
-    Comando para executar o docker compose: 
+    Comando para executar o docker compose:  
     ````
-    docker compose up -d  
+    docker compose up -d
     ````
     Orientação sobre EF:  
     O que é preciso para configurá-lo?  
