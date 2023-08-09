@@ -42,6 +42,7 @@ Com o Mestre Rafael Miranda.
     ports:
       - "1433:1433"  
     ````
+    ``
     Comando para executar o docker compose: 
     ````
     docker compose up -d  
