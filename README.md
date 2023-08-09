@@ -14,6 +14,7 @@ Com o Mestre Rafael Miranda.
 Dia 1 - 03/08/2023  
   Definição do escopo do projeto.  
   Criação das Models: foi criado um esboço das entidades Entity para o Id, produto e atributos, com a relação de um para muitos para o CRUD.   
+  ````
   Entity:  
     - Id  
   Product:  
@@ -22,7 +23,8 @@ Dia 1 - 03/08/2023
     - Producer  
   Attribute:  
     - Name  
-    - Value  
+    - Value
+   ````  
   *Dicas*:  
 
   Dia 2 - 09/08/2023  
