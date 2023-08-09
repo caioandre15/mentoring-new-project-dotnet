@@ -42,8 +42,8 @@ Dia 1 - 03/08/2023
       ACCEPT_EULA: Y
     ports:
       - "1433:1433"
-    ````
-    Comando para executar o docker compose:      
+    ````  
+    Comando para executar o docker compose:  
     ````
     docker compose up -d  
     ````
