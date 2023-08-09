@@ -44,9 +44,10 @@ Com o Mestre Rafael Miranda.
       - "1433:1433" 
     ````  
   Comando para executar o docker compose:  
-    ````  
+  ````  
   docker compose up -d
-    ````  
+  ````
+  
   Orientação sobre EF:  
   O que é preciso para configurá-lo?  
   Tendo as classes models criadas, devemos criar uma classe de contexto do banco de dados. Uma classe que estenda a classe DbContext. Para isso foi criado o construtor passando o 
