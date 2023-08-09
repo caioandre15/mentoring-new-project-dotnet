@@ -43,7 +43,7 @@ Com o Mestre Rafael Miranda.
       - "1433:1433"  
     ````  
     Comando para executar o docker compose:  
-    ````
+    ````  
     docker compose up -d
     ````  
     Orientação sobre EF:  
