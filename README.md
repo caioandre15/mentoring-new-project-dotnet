@@ -31,15 +31,15 @@ Dia 1 - 03/08/2023
     Também não é necessário que o compose tenha volumes, pois não há necessidade de persistir os dados na máquina.  
     Como ficou o docker-compose.yml:  
     ````
-    version: '3.8'
-    services:
-    sql-server:
-    image: mcr.microsoft.com/mssql/server
-    environment:
-      SA_PASSWORD: Password1
-      ACCEPT_EULA: Y
-    ports:
-      - "1433:1433"
+    version: '3.8'  
+    services:  
+    sql-server:  
+    image: mcr.microsoft.com/mssql/server  
+    environment:  
+      SA_PASSWORD: Password1  
+      ACCEPT_EULA: Y  
+    ports:  
+      - "1433:1433"  
     ````
     Comando para executar o docker compose:  
     ````
