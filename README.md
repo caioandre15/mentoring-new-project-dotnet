@@ -25,11 +25,11 @@ Dia 1 - 03/08/2023
     - Value  
   *Dicas*:  
 
-  Dia 2 - 09/08/2023
+  Dia 2 - 09/08/2023  
     Orientação sobre Dockerfile e docker-compose.yml:  
-    O que realmente necessitamos nesta etapa do projeto é criar o arquivo docker-compose.yml para termos um banco local, não a necessidade de criar uma imagem para aplicação com o DockerFile.
+    O que realmente necessitamos nesta etapa do projeto é criar o arquivo docker-compose.yml para termos um banco local, não a necessidade de criar uma imagem para aplicação com o DockerFile.  
     Também não é necessário que o compose tenha volumes, pois não há necessidade de persistir os dados na máquina.  
-    Como ficou o docker-compose.yml:
+    Como ficou o docker-compose.yml:  
     ````
     version: '3.8'
     services:
@@ -41,9 +41,9 @@ Dia 1 - 03/08/2023
     ports:
       - "1433:1433"
     ````
-    Comando para executar o docker compose:
+    Comando para executar o docker compose:  
     ````
-    docker compose up -d
+    docker compose up -d  
     ````
     Orientação sobre EF:  
     O que é preciso para configurá-lo?  
