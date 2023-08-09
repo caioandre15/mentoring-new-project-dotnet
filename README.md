@@ -40,7 +40,7 @@ Com o Mestre Rafael Miranda.
       SA_PASSWORD: Password1  
       ACCEPT_EULA: Y  
     ports:  
-      - "1433:1433"
+      - "1433:1433"` 
     ````
     Comando para executar o docker compose:  
     ````  
