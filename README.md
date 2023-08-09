@@ -26,7 +26,7 @@ Com o Mestre Rafael Miranda.
     - Value
    ````  
 
-  **Dia 2 - 09/08/2023**  
+**Dia 2 - 09/08/2023**  
   Orientação sobre Dockerfile e docker-compose.yml:  
   O que realmente necessitamos nesta etapa do projeto é criar o arquivo docker-compose.yml para termos um banco local, não a necessidade de criar uma imagem para aplicação com o DockerFile.  
   Também não é necessário que o compose tenha volumes, pois não há necessidade de persistir os dados na máquina.  
@@ -64,3 +64,11 @@ Com o Mestre Rafael Miranda.
         public DbSet<Models.Attribute> Attributes { get; set; }  
     }  
     ````
+
+  Depois é necessário conectar o banco de dados na aplicação, como fazer isso? Aonde?
+  Pegando como base a última versão do .NET no momento (.NET 7.0) a injeção de depêndencia fica na classe Program.cs.
+  Para realizar a esta injeção podemos fazer assim:  
+   ````
+   
+   ````
+
