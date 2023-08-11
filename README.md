@@ -69,6 +69,14 @@ Com o Mestre Rafael Miranda.
   Pegando como base a última versão do .NET no momento (.NET 7.0) a injeção de depêndencia fica na classe Program.cs.
   Para realizar a esta injeção podemos fazer assim:  
    ````
-   
+   builder.Services.AddDbContext<DataBaseContext>(options =>
+   {
+      options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+   });
    ````
-
+   * Lembrando que este trecho deve ser adicionada antes do comando ``var app = builder.Build();`` 
+  Depois para criar as migrations e criar o banco de dados são executados os dois comandos abaixo no Packager Manager Console:  
+   ````
+   dotnet ef migrations add InitialCreate
+   dotnet ef database update
+   ````
