@@ -46,6 +46,12 @@ Com o Mestre Rafael Miranda.
   ````  
   docker compose up -d
   ````
+  Pacotes a serem utilizados para trabalhar com sql server e EF na aplicação .NET:  
+  ````
+  Install-Package Microsoft.EntityFrameworkCore
+  Install-Package Microsoft.EntityFrameworkCore.SqlServer
+  Install-Package Microsoft.EntityFrameworkCore.Tools
+  ````
   
   Orientação sobre EF:  
   O que é preciso para configurá-lo?  
@@ -53,7 +59,7 @@ Com o Mestre Rafael Miranda.
   DbContextOptions e os DbSets que serão as tabelas criadas pelo EF.  
   Como ficou a classe extendida pelo DbContext:  
     
-    ````
+  ````
     public class DataBaseContext : DbContext  
     {
         public DataBaseContext(DbContextOptions<DataBaseContext> options)  
@@ -62,8 +68,13 @@ Com o Mestre Rafael Miranda.
         public DbSet<Product> Products { get; set; }  
         public DbSet<Models.Attribute> Attributes { get; set; }  
     }  
-    ````
-
+  ````
+  No arquivo appsettings.json do seu projeto, adicione uma seção para configurar a conexão com o banco de dados SQL Server:  
+  ````
+    "ConnectionStrings": {
+    "DefaultConnection": "Server=seu_servidor;Database=seu_banco_de_dados;User Id=seu_usuario;Password=sua_senha;"
+    }
+  ````
   Depois é necessário conectar o banco de dados na aplicação, como fazer isso? Aonde?
   Pegando como base a última versão do .NET no momento (.NET 7.0) a injeção de depêndencia fica na classe Program.cs.
   Para realizar a esta injeção podemos fazer assim:  
@@ -74,8 +85,13 @@ Com o Mestre Rafael Miranda.
    });
    ````
    * Lembrando que este trecho deve ser adicionada antes do comando ``var app = builder.Build();`` 
-  Depois para criar as migrations e criar o banco de dados são executados os dois comandos abaixo no Packager Manager Console:  
+  Depois para criar as migrations e criar o banco de dados. São executados os dois comandos abaixo no Packager Manager Console:  
    ````
    dotnet ef migrations add InitialCreate
    dotnet ef database update
+   ````
+   Ou de forma reduzida:  
+   ````
+   Add-Migration InitialCreate
+   Update-Database
    ````
