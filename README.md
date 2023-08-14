@@ -5,9 +5,8 @@ Com o Mestre Rafael Miranda.
 - Fazer um CRUD de produtos:  
 - Criação/Update/Delete  
 - Sql sever  
-- testes de integração  
 - Usando docker  
-- Testes unitários e integerados  
+- Testes unitários e integrados  
 - Monitoria  
 - RabbitMQ  
 
