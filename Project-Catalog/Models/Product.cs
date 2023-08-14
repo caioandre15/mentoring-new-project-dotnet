@@ -1,4 +1,4 @@
-﻿namespace Catalog.Models
+﻿namespace ProjectCatalog.Models
 {
     public class Product : Entity
     {

@@ -1,7 +1,7 @@
-﻿using Catalog.Models;
+﻿using ProjectCatalog.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Catalog.Context
+namespace ProjectCatalog.Context
 {
     public class DataBaseContext : DbContext
     {
@@ -10,7 +10,7 @@ namespace Catalog.Context
         {}
 
         public DbSet<Product> Products { get; set; }
-        public DbSet<Models.Attribute> Attributes { get; set; }
+        public DbSet<ProjectCatalog.Models.Attribute> Attributes { get; set; }
 
     }
 }
