@@ -141,4 +141,23 @@ Com o Mestre Rafael Miranda.
    ````
     public DbSet<ProductAttribute> ProductAttributes { get; set; }
    ````
+
+### Criando uma Controller:  
+  Para cria uma controller automaticamente pode ser utilizado o comando de scaffold, segue abaixo a sintaxe básica:  
+  ````
+    dotnet aspnet-codegenerator controller -name NomeDoControlador -async -api -m NomeDoModelo -dc NomeDoDbContext
+  ````
+  Explicação do comando:   
+  -name NomeDoControlador: Especifica o nome do controlador a ser gerado.  
+  -async: Gera métodos de ação assíncronos.  
+  -api: Gera um controlador Web API.  
+  -m NomeDoModelo: Especifica o nome da classe de modelo para o qual o controlador será gerado.  
+  -dc NomeDoDbContext: Especifica o nome da classe de contexto do banco de dados.  
+
+  Exemplo de uso: 
+  Vamos considerar o exemplo de criação do controlador ProductController para uma classe de modelo Product e usando um contexto de banco de dados chamado AppDbContext. O comando ficaria assim:  
+  ````
+  dotnet aspnet-codegenerator controller -name ProductController -async -api -m Product -dc AppDbContext
+  ````
+
  
