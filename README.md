@@ -95,3 +95,50 @@ Com o Mestre Rafael Miranda.
    Add-Migration InitialCreate
    Update-Database
    ````
+  Para realizar a relação muitos para muitos recorri a documentação da microsoft (EF), onde encontrei o exemplo para seguir com a implementação.  
+  [link da doc](https://learn.microsoft.com/pt-br/ef/core/modeling/relationships/many-to-many)
+
+  Exemplo das Classes:    
+   ````
+   public class Post
+   {
+      public int Id { get; set; }
+      public List<Tag> Tags { get; } = new();
+   }
+
+   public class Tag
+   {
+      public int Id { get; set; }
+      public List<Post> Posts { get; } = new();
+   }
+
+   public class PostTag
+   {
+      public int PostId { get; set; }
+      public int TagId { get; set; }
+   }
+   ````
+  Exemplo da configuração da relação muitos para muitos:  
+   ````
+   protected override void OnModelCreating(ModelBuilder modelBuilder)
+   {
+      modelBuilder.Entity<Post>()
+          .HasMany(e => e.Tags)
+          .WithMany(e => e.Posts)
+          .UsingEntity<PostTag>();
+   }
+   ````
+  Explicação:  
+  1)modelBuilder.Entity<Product>(): Isso diz ao Entity Framework que você está configurando a entidade Product.  
+
+  2).HasMany(e => e.Attributes): Isso define que a entidade Product tem uma coleção de atributos (relação muitos para muitos). O parâmetro e => e.Attributes especifica a propriedade de navegação na entidade Product que representa essa relação.  
+
+  3).WithMany(e => e.Products): Isso define que a entidade Attribute também tem uma coleção de produtos (relação muitos para muitos). O parâmetro e => e.Products especifica a propriedade de navegação na entidade Attribute que representa essa relação.  
+
+  4).UsingEntity<ProductAttribute>(): Isso indica que você está usando uma entidade intermediária chamada ProductAttribute para representar a relação muitos para muitos entre Product e Attribute. Essa entidade intermediária é automaticamente criada pelo Entity Framework para gerenciar a relação entre as duas entidades principais.  
+
+  Configurar também o DbSet na classe de contexto do database:  
+   ````
+    public DbSet<ProductAttribute> ProductAttributes { get; set; }
+   ````
+ 
