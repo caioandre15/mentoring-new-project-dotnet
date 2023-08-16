@@ -5,7 +5,6 @@
         public string Name { get; set; }
         public string Value { get; set; }
 
-        public Guid ProductId { get; set; }
-        public Product Product { get; set; }
+        public List<Product> Products { get; } = new();
     }
 }

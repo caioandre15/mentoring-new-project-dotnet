@@ -11,6 +11,16 @@ namespace ProjectCatalog.Context
 
         public DbSet<Product> Products { get; set; }
         public DbSet<ProjectCatalog.Models.Attribute> Attributes { get; set; }
+        public DbSet<ProductAttribute> ProductAttributes { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Product>()
+                .HasMany(e => e.Attributes)
+                .WithMany(e => e.Products)
+                .UsingEntity<ProductAttribute>();
+        }
+        
 
     }
 }
