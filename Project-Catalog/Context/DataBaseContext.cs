@@ -20,7 +20,5 @@ namespace ProjectCatalog.Context
                 .WithMany(e => e.Products)
                 .UsingEntity<ProductAttribute>();
         }
-        
-
     }
 }
