@@ -43,7 +43,7 @@ Com o Mestre Rafael Miranda.
     ````  
   Comando para executar o docker compose:  
   ````  
-  docker compose up -d
+  docker compose up -d --build
   ````
   Pacotes a serem utilizados para trabalhar com sql server e EF na aplicação .NET:  
   ````
