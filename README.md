@@ -117,7 +117,7 @@ Com o Mestre Rafael Miranda.
       public int TagId { get; set; }
    }
    ````
-  Exemplo da configuração da relação muitos para muitos:  
+  Exemplo da configuração da relação muitos para muitos adicionado a classe do contexto de banco de dados:  
    ````
    protected override void OnModelCreating(ModelBuilder modelBuilder)
    {
