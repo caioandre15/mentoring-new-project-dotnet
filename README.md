@@ -3,7 +3,6 @@ Com o Mestre Rafael Miranda.
 
 ## Projeto de aprendizado  
 - Fazer um CRUD de produtos:  
-- Criação/Update/Delete  
 - Sql sever  
 - Usando docker  
 - Testes unitários e integrados  
