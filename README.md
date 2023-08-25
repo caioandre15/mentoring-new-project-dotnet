@@ -177,6 +177,7 @@ Entendi porque retirar ou comentar a linha Nullable do arquivo cs.proj - que ser
 ````
 <!--<Nullable>enable</Nullable>-->
 ````
+[Artigo sobre validação de entrada de dados](https://dev.to/rafaelpadovezi/validacao-de-entrada-de-dados-e-respostas-de-erro-no-asp-net-1pff)
 
 
   
