@@ -1,11 +1,10 @@
-﻿namespace ProjectCatalog.Models
-{
-    public class Product : Entity
-    {
-        public string Sku { get; set; }
-        public string Description { get; set; }
-        public string Producer { get; set; }
+﻿namespace ProjectCatalog.Models;
 
-        public List<Attribute> Attributes { get; } = new();
-    }
+public class Product : Entity
+{
+    public string Sku { get; set; }
+    public string Description { get; set; }
+    public string Producer { get; set; }
+
+    public List<Attribute> Attributes { get; } = new();
 }

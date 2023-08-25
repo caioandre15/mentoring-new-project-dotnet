@@ -1,11 +1,10 @@
-﻿namespace ProjectCatalog.Models
+﻿namespace ProjectCatalog.Models;
+
+public abstract class Entity
 {
-    public abstract class Entity
-    {
-        protected Entity() 
-        { 
-            Id = Guid.NewGuid();
-        }
-        public Guid Id { get; set; }
+    protected Entity() 
+    { 
+        Id = Guid.NewGuid();
     }
+    public Guid Id { get; set; }
 }
