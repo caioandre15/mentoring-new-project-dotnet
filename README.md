@@ -4,7 +4,9 @@ Com o Mestre Rafael Miranda.
 ## Projeto de aprendizado  
 - Fazer um CRUD de produtos:  
 - Sql sever  
-- Usando docker  
+- Usando docker
+- Autorização
+- FluentValidation
 - Testes unitários e integrados  
 - Monitoria  
 - RabbitMQ  
