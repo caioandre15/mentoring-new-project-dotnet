@@ -181,5 +181,27 @@ Entendi porque retirar ou comentar a linha Nullable do arquivo cs.proj - que ser
 ````
 [Artigo sobre validação de entrada de dados](https://dev.to/rafaelpadovezi/validacao-de-entrada-de-dados-e-respostas-de-erro-no-asp-net-1pff)
 
+O que é e o que faz este decorator [ApiController]?
+
+O decorator [ApiController] é usado em tecnologias como o ASP.NET Core (framework da Microsoft para construção de aplicativos web e APIs) para indicar que uma classe de controle (controller) deve ter comportamentos e convenções específicas aplicadas a ela.  
+
+No contexto do ASP.NET Core, o decorator [ApiController] é usado para habilitar algumas convenções automáticas nos controladores da API. Aqui estão algumas das coisas que esse decorator faz:  
+
+Inferência automática de comportamento: Com o [ApiController] aplicado a uma classe de controle, o ASP.NET Core assume automaticamente determinados comportamentos padrão, como a inferência dos códigos de status HTTP apropriados para as ações (métodos) do controlador.  
+
+Validação automática: O decorator habilita a validação automática dos parâmetros de entrada das ações do controlador, ajudando a garantir que os dados enviados pelos clientes da API sejam válidos de acordo com as regras definidas no modelo de dados.  
+
+Tratamento de erros: O [ApiController] também inclui o tratamento automático de exceções. Isso significa que exceções comuns, como erros de validação, são automaticamente traduzidas em respostas HTTP apropriadas, como respostas 400 Bad Request.  
+
+Formatação de resposta automática: O decorator ajuda na formatação automática das respostas de acordo com os formatos aceitos nas requisições (JSON, XML, etc.), o que é especialmente útil para APIs que devem suportar vários formatos de resposta.  
+
+Padrões de nomenclatura: O [ApiController] segue convenções de nomenclatura para mapear os nomes dos métodos de ação (ações) nos URLs da API.  
+
+Suporte a ApiControllerAttribute: Ele também permite que outras características, como a [ProducesResponseType], sejam usadas para documentar o comportamento da API e os tipos de resposta esperados.  
+
+Tratamento automático de ModelState: Ajuda a simplificar o tratamento do ModelState (estado do modelo), que contém informações sobre erros de validação e outros problemas relacionados ao modelo de dados.  
+
+Em resumo, o decorator [ApiController] é usado para simplificar a criação e manutenção de controladores de API no ASP.NET Core, automatizando várias tarefas comuns e aplicando convenções consistentes para o comportamento da API. Isso ajuda os desenvolvedores a escreverem menos código repetitivo e se concentrarem mais na lógica de negócios da aplicação.  
+
 
   
