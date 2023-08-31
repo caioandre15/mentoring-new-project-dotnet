@@ -6,7 +6,8 @@ Com o Mestre Rafael Miranda.
 - Sql server (Usando docker)
 - Autorização
 - FluentValidation
-- DTO para exibir os dados.
+- DTO para exibir os dados (Utilizando o Mapper).
+- Criar serviços com interfaces.
 - Ambiente de testes
 - Testes unitários e integrados 
 - Monitoria  
