@@ -11,7 +11,9 @@ Com o Mestre Rafael Miranda.
 - Ambiente de testes
 - Testes unitários e integrados 
 - Monitoria  
-- RabbitMQ  
+- RabbitMQ
+- Outbox
+- Consumidores
 
 ### **Dia 1 - 03/08/2023**  
   Definição do escopo do projeto.  
