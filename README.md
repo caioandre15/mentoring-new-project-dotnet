@@ -14,6 +14,7 @@ Com o Mestre Rafael Miranda.
 - RabbitMQ
 - Outbox
 - Consumidores
+- Feature Flag
 
 ### **Dia 1 - 03/08/2023**  
   Definição do escopo do projeto.  
